@@ -1,0 +1,122 @@
+@charset "euc-kr";
+@import url('reset.css');
+@import url('gnb.css');
+
+
+
+#wrapper { width:100%; }
+
+#container { width:83.8%; margin:0 auto; margin-top:48px;}/*1056*1260*/
+
+#ex_title { height:132px; }
+#ex_title .title { float:left; }
+#exhibition { height:803px; border-bottom:1px solid #ccc; overflow:hidden; }
+#exhibition .exhibition_btn { float:right; }
+#exhibition .exhibition_btn li { float:left; margin-left:20px; margin-top:98px;}
+#exhibition .exhibition_btn li img { width:100%; }
+
+#ex_txt { position:relative; }
+#ex_page { margin-top:35px; height:587px; position:absolute; display:none;}
+#ex_page .page_title { float:right; width:47.3%; }
+#ex_page .page_title img { width:100%; }
+#ex_page .page_img { float:left; width:48.6%;}/*513*1056*/
+#ex_page .page_img img { width:100%; }
+#ex_page .page_txt { float:right; width:47.3%; }/*500*1056*/
+#ex_page .page_txt img { width:100%; }
+#ex_page .page_txt800 { display:none; }
+#ex_page .page_txt480 { display:none; }
+
+#ex_korea { margin-top:35px; height:587px; position:absolute;}
+#ex_korea .korea_title { float:right; width:47.3%; }
+#ex_korea .korea_title img { width:100%; }
+#ex_korea .korea_img { float:left; width:48.6%;}/*513*1056*/
+#ex_korea .korea_img img { width:100%; }
+#ex_korea .korea_txt { float:right; width:47.3%; margin-top:70px;}/*500*1056*/
+#ex_korea .korea_txt img { width:100%; }
+#ex_korea .korea_txt800 { display:none; }
+#ex_korea .korea_txt480 { display:none; }
+
+
+
+#e_schedule { margin-top:62px;  }
+#e_schedule h2 { height:113px; }
+#e_schedule .s_wrap { margin-top:41px; }
+#e_schedule .es_wrap { float:left;  width:20%; }
+#e_schedule .es_item { margin:9px;}
+#e_schedule .es_item li { margin-top:5px; }
+#e_schedule .es_item li img { width:100%; }
+#e_schedule .es_item li a { font-size:0.7142em; font-weight:bold; text-align:center;  }
+
+#footer { clear:both; color:#666; font-size:11px; text-align:center; padding:50px 0; width:100%; display:block; }
+
+
+@media screen and (max-width:1024px){
+
+	#exhibition { height:700px; }
+	#e_schedule .es_wrap { float:left; width:25%; height:325px;}
+
+}
+@media screen and (max-width:800px){
+	#ex_title .title { width:45%; }
+	#ex_title .title img { width:100%; }
+
+	#exhibition { height:770px; }
+	#ex_page { height:587px;}
+
+	#ex_page .page_title { float:none; width:100%;}
+	#ex_page .page_title img { width:80%; margin:0 auto; display:block;}
+	#ex_page .page_txt { display:none; }
+	#ex_page .page_txt800 { display:block; float:right; width:47.3%;}
+	#ex_page .page_txt800 img { width:100%; }
+	
+	#ex_korea .korea_title { float:none; width:100%;}
+	#ex_korea .korea_title img { width:80%; margin:0 auto; display:block;}
+	#ex_korea .korea_txt { display:none; }
+	#ex_korea .korea_txt800 { display:block; float:right; width:47.3%;}
+	#ex_korea .korea_txt800 img { width:100%; }
+
+	#e_schedule .es_wrap { float:left;  width:33.3%; }
+	#e_schedule .es_wrap { height:350px; }
+
+}
+
+@media screen and (max-width:480px){
+	#exhibition { height:900px; }
+	#ex_title { height:100px; }
+
+	#ex_page { margin-top:0; }
+	#ex_page .page_title { float:none; width:100%;}
+	#ex_page .page_title img { width:90%; margin:0 auto; display:block;}
+	#ex_page .page_txt { display:none; }
+	#ex_page .page_txt800 { display:none;}
+	#ex_page .page_txt480 { display:block; width:100%; margin-bottom:63px;}
+	#ex_page .page_txt480 img { width:90%; margin:0 auto; display:block;}
+	#ex_page .page_img { float:none; width:100%;}/*513*1056*/
+	#ex_page .page_img img { width:90%; margin:0 auto; display:block;}
+
+	#ex_korea { margin-top:0; }
+	#ex_korea .korea_title { float:none; width:100%;}
+	#ex_korea .korea_title img { width:90%; margin:0 auto; display:block;}
+	#ex_korea .korea_txt { display:none; }
+	#ex_korea .korea_txt800 { display:none;}
+	#ex_korea .korea_txt480 { display:block; width:100%; margin-bottom:63px;}
+	#ex_korea .korea_txt480 img { width:90%; margin:0 auto; display:block;}
+	#ex_korea .korea_img { float:none; width:100%;}/*513*1056*/
+	#ex_korea .korea_img img { width:90%; margin:0 auto; display:block;}
+	#exhibition .exhibition_btn li { float:left; margin-left:20px; margin-top:60px;}
+	#exhibition .exhibition_btn li img { width:80%; }
+	
+	#e_schedule { overflow:hidden; }
+	#e_schedule h2 { width:70%; }
+	#e_schedule h2 img { width:100%; }
+	#e_schedule .es_wrap { float:left; width:50%; height:320px; }
+	#e_schedule .s_wrap { margin-top:0; }
+	#e_schedule .es_item li a { font-size:10px; }
+}
+
+@media screen and (max-width:360px){
+	#e_schedule .es_wrap { height:240px; }
+
+
+
+}

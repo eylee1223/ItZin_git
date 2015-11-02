@@ -1,0 +1,156 @@
+@charset "euc-kr";
+@import url('reset.css');
+@import url('gnb.css');
+
+#wrapper { width:100%; }
+#container { width:82.8%; margin:0 auto; }/*width:1043*/
+
+
+#cafe_wrap { margin-top:60px; padding-bottom:40px; width:100%; overflow:hidden; border-bottom:1px solid #ececec; }
+#cafe_wrap h2 { width:20%; float:left; }
+#cafe_wrap h2 img { width:100%; }
+#cafe_wrap .cafe_btn { float:right; margin-top:30px; }
+#cafe_wrap .cafe_btn li { float:left; margin-left:20px; }
+#cafe_wrap .cafe_btn li img { width:100%; }
+
+#cafe_wrap .cafe { clear:both; position:relative; width:100%; height:500px; padding-bottom:30px; }
+#cafe_wrap .cafe .cafe_box { width:100%; position:absolute; top:18px; left:0; display:none; }
+#cafe_wrap .cafe .green { display:block; }
+
+
+.cafe .cafe_box span { width:50.2%; float:left; display:block; }
+.cafe .cafe_box span img { width:100%; }
+.cafe .cafe_box span.icon { width:48%; position:absolute; right:0;  top:80.2%; }
+.cafe .cafe_box span.icon img { width:100%; }
+.cafe .cafe_box .bear { display:none; }
+.cafe .cafe_box dl { width:50%; display:block; float:left; }
+.cafe .cafe_box dl dt { font-weight:700; margin-top:20px; color:#333; font-size:0.75em; line-height:20px; }
+.cafe .cafe_box dl dt strong { font-size:16px; display:block;}
+
+.cafe li.cafe_box dl dd { font-size:0.75em; color:#666; line-height:18px; margin-top:20px; }
+
+.cafe .cafe_box ul.img_box li { position:absolute; right:0; top:0; width:48%; }
+.cafe .cafe_box ul.img_box li img {width:100%;  }
+
+
+#setmenu_wrap { margin-top:60px; width:100%; height:700px; overflow:hidden; }
+#setmenu_wrap h2 { width:37%; float:left; }
+#setmenu_wrap h2 img { width:100%; }
+
+#setmenu_wrap .setmenu_btn { float:right; margin-top:60px; }
+#setmenu_wrap .setmenu_btn li { float:left; margin-left:20px; }
+#setmenu_wrap .setmenu_btn li img { width:100%; }
+
+#setmenu_wrap .setmenu { clear:both; position:relative; width:100%; height:500px; }
+#setmenu_wrap .setmenu .set_box { width:100%; height:520px; position:absolute; top:18px; left:0; display:none; }
+#setmenu_wrap .setmenu .origin { display:block; }
+
+.setmenu .set_box span { width:57.5%; float:left; margin-right:1.7%; }
+.setmenu .set_box span img { width:100%; }
+.setmenu .set_box span.set_s { margin-top:18px; }
+.setmenu .set_box .mix { position:absolute; width:40.7%; height:273px; bottom:20px; right:0; }
+.setmenu .set_box .mix li { height:129px; margin-bottom:15px; }
+.setmenu .set_box .mix li img { width:95%; }
+
+.setmenu .set_box dl { width:40.7%; display:inline-block; float:right; }
+.setmenu .set_box dl dt { font-size:0.75em; font-weight:700; color:#333; line-height:20px; }
+.setmenu .set_box dl dt strong { font-size:1.1428em; display:block; margin-top:15px; }
+.setmenu .set_box dl dt.title { font-size:1.7142em; display:inline-block; padding-bottom:5px; border-bottom:1px solid #333; }
+.setmenu .set_box dl dd { font-size:0.75em; line-height:18px; color:#333; margin-top:20px; }
+
+
+#footer { font-size:0.75em; color:#666; width:100%; text-align:center; padding:30px 0;  }
+
+
+
+@media screen and (max-width:1024px){
+	#cafe_wrap .cafe { height:420px; padding-bottom:30px; }
+	#cafe_wrap .cafe_btn { float:right; margin-top:60px; }
+	.cafe .cafe_box span.icon {  }
+	.setmenu .set_box .mix { bottom:10px; right:0; }
+	.setmenu .set_box .mix li { height:95px; margin-bottom:0; }
+
+
+}
+
+@media screen and (max-width:800px){
+
+	#cafe_wrap .cafe { height:420px; padding-bottom:30px; }
+	.cafe .cafe_box span.icon { right:0; top:60%; }
+	.cafe .wons span.icon { right:0;  bottom:125px; }
+	.cafe .cafe_box span { float:none; }
+	.cafe .cafe_box dl { width:50%; display:block; float:none; margin-top:20px; }
+
+
+
+
+
+	#setmenu_wrap { margin-top:60px; width:100%; height:600px; overflow:hidden; }
+	#setmenu_wrap h2 { width:60%; }
+
+	.setmenu .set_box .mix { bottom:0px; }
+	.setmenu .set_box .mix li { height:80px; margin-bottom:0; }
+	
+
+
+}
+
+@media screen and (max-width:480px){
+
+	#cafe_wrap h2 { width:50%; }
+	#cafe_wrap h2 img { width:100%; }
+	#cafe_wrap .cafe { height:800px; padding-bottom:30px; }
+	#cafe_wrap .cafe_btn li { margin-top:25px; margin-left:-5px; }
+	#cafe_wrap .cafe_btn li img { float:right; width:60%; margin-left:0; }
+
+	.cafe { position:relative;}
+	.cafe .cafe_box span { width:100%; float:none; }
+	.cafe .cafe_box span img { width:100%; }
+	.cafe .cafe_box span.icon { width:100%; position:absolute; left:0; top:720px; }
+	.cafe .cafe_box span.icon img { width:100%; }
+	.cafe .cafe_box .bear { display:block; position:absolute; top:160px; right:0; width:64px; }
+	.cafe .cafe_box .bear img { width:100%; }
+
+	.cafe .cafe_box ul.img_box li { position:absolute; right:0; top:470px; width:100%; }
+	.cafe .cafe_box ul.img_box li img {width:100%; }
+
+	.cafe .cafe_box dl { width:100%; display:inline-block; float:left; }
+
+	.setmenu .set_box .mix { bottom:7px; }
+	.setmenu .set_box .mix li { height:80px; margin-bottom:0; }
+
+/*cafe_wrap end*/
+
+	#setmenu_wrap { margin-top:60px; width:100%; height:800px; overflow:hidden; }
+	#setmenu_wrap h2 img { width:100%; }
+	#setmenu_wrap .setmenu_btn { float:right; margin-top:40px; }
+	#setmenu_wrap .setmenu_btn li { margin-top:0; margin-left:-5px; }
+	#setmenu_wrap .setmenu_btn li img { float:right; width:60%; }
+
+	.setmenu .set_box span { width:100%; height:150px; float:none; margin-right:1.7%; }
+	.setmenu .set_box span img { width:100%; }
+
+	.setmenu .set_box span.set_s { display:none; }
+
+	.setmenu .set_box dl { width:100%; margin-top:20px; display:inline-block; float:none; }
+
+	.setmenu .set_box .mix { position:absolute; width:100%; height:265px; left:18px; bottom:-180px; }
+	.setmenu .set_box .mix li { height:129px; margin-bottom:10px; }
+
+
+}
+
+
+@media screen and (max-width:320px){
+	#cafe_wrap h2 { width:40%; }
+	#cafe_wrap h2 img { width:100%; }
+	#cafe_wrap .cafe { height:700px; padding-bottom:15px; }
+	#cafe_wrap .cafe_btn { margin-top:15px; margin-left:-5px; }
+	.cafe .cafe_box ul.img_box li { position:absolute; top:480px; }
+	.cafe .cafe_box span.icon { top:650px; }
+	.cafe .wons span.icon { bottom:-250px; }
+	#setmenu_wrap .setmenu_btn { float:right; margin-top:20px; }
+
+	.setmenu .set_box .mix { bottom:-160px; }
+	.setmenu .set_box .mix li { height:100px; margin-bottom:0; }
+}
